@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.pc.homepage.dao.ProductReviewsDao">
+	<resultMap type="com.pc.homepage.entity.ProductReviewsEntity" id="productReviewsMapper">
+		<result property="id" column="pr_id"/>
+		<result property="userId" column="pr_userId"/>
+		<result property="commodityId" column="pr_commodityId"/>
+		<result property="oderNumber" column="pr_oderNumber"/>
+		<result property="commentTime" column="pr_commentTime"/>
+		<result property="commenContent" column="pr_commenContent"/>
+		<result property="imagePath" column="pr_imagePath"/>
+		<result property="merchandiseCompliance" column="pr_merchandiseCompliance"/>
+		<result property="storeAttitude" column="pr_storeAttitude"/>
+		<result property="logisticsSpeed" column="pr_logisticsSpeed"/>
+		<result property="dispatcherAttitude" column="pr_dispatcherAttitude"/>
+		<result property="likeNumber" column="pr_likeNumber"/>
+	</resultMap>
+
+</mapper>

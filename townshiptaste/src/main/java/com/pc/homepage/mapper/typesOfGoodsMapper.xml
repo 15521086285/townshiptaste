@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pc.homepage.dao.TypesOfGoodsDao">
+	<resultMap type="com.pc.homepage.entity.TypesOfGoodsEntity" id="TypesOfGoodsMapper">
+		<result property="id" column="tog_id"/>
+		<result property="categoryName" column="tog_categoryName"/>
+		<result property="commodityCategoriesId" column="tog_commodityCategoriesId"/>
+	</resultMap>
+</mapper>

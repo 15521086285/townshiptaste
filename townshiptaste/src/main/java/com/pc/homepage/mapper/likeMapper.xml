@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.pc.homepage.dao.LikeDao">
+	<resultMap type="com.pc.homepage.entity.LikeEntity" id="likeMapper">
+		<result property="id" column="l_id"/>
+		<result property="userId" column="l_userId"/>
+		<result property="commentId" column="l_commentId"/>
+	</resultMap>
+</mapper>

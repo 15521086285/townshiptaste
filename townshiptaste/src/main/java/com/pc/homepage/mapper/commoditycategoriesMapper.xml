@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pc.homepage.dao.CommodityCategoriesDao">
+	<resultMap type="com.pc.homepage.entity.CommodityCategories" id="commodityCategoriesMapper">
+		<result property="id" column="cc_id"/>
+		<result property="categorieName" column="cc_categorieName"/>
+		<result property="featuresId" column="cc_featuresId"/>
+	</resultMap>
+
+</mapper>

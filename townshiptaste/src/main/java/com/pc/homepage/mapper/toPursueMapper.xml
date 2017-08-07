@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.pc.homepage.dao.ToPursueDao">
+	<resultMap type="com.pc.homepage.entity.ToPursueEntity" id="toPursueMapper">
+		<result property="id" column="l_id"/>
+		<result property="commentId" column="tp_commentId"/>
+		<result property="toPursueTime" column="tp_toPursueTime"/>		
+		<result property="toPursueContent" column="tp_toPursueContent"/>
+	</resultMap>
+</mapper>

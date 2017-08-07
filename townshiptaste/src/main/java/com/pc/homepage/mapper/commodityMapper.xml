@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pc.homepage.dao.CommodityDao">
+	<resultMap type="com.pc.homepage.entity.CommodityEntity" id="commodityMapper">
+		<result property="id" column="cp_id" />
+		<result property="price" column="cp_price" />
+		<result property="productDescription" column="cp_productDescription" />
+		<result property="sourceAddress" column="cp_sourceAddress" />
+		<result property="commentId" column="cp_commentId" />
+		<result property="shopId" column="cp_shopId" />
+		<result property="imagePath" column="cp_imagePath" />
+		<result property="typesOfGoodsEntityId" column="cp_typesOfGoodsEntityId" />
+	</resultMap>
+	
+	<update id="modifyGoods" parameterType="com.pc.homepage.entity.CommodityEntity">
+		update pc_hp_commodity 
+		<set>
+			<if test="price != null">
+				cp_price=#{price}
+			</if>
+			<if test="productDescription != null">
+				,cp_productDescription=#{productDescription}
+			</if>
+			<if test="sourceAddress != null">
+				,cp_sourceAddress=#{sourceAddress}
+			</if>
+		</set>
+		where cp_id=#{id}
+	</update>
+
+</mapper>

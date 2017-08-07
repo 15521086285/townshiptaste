@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pc.usersystem.dao.RegisterDao">
+	<resultMap type="com.pc.usersystem.entity.Userinfo" id="userinfoMap">
+		<id property="id" column="u_id"/>
+		<result property="userName" column="u_username"/>
+		<result property="passWord" column="u_password"/>
+		<result property="cellPhoneNumber" column="u_cellphonenumber"/>
+		<result property="email" column="u_email"/>
+	</resultMap>
+
+</mapper>

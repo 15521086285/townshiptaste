@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	
+	<!-- 配置实体类别名 -->
+	<typeAliases>
+		<!-- 包级别 -->
+		<package name="com.pc.usersystem.entity"/>
+	</typeAliases>
+	<mappers>
+	
+		<mapper resource="com/pc/usersystem/mapper/userinfoMapper.xml"/>
+		<mapper resource="com/pc/usersystem/mapper/loginMapper.xml"/>
+		<mapper resource="com/pc/homepage/mapper/commoditycategoriesMapper.xml"/>
+		<mapper resource="com/pc/homepage/mapper/featuresMapper.xml"/>
+		<mapper resource="com/pc/homepage/mapper/typesOfGoodsMapper.xml"/>
+		<mapper resource="com/pc/homepage/mapper/commodityMapper.xml"/>
+		
+		<mapper resource="com/pc/homepage/mapper/toPursueMapper.xml"/>
+		<mapper resource="com/pc/homepage/mapper/merchantReplyMapper.xml"/>
+		<mapper resource="com/pc/homepage/mapper/productReviewsMapper.xml"/>
+		<mapper resource="com/pc/homepage/mapper/merchantReplyMapper.xml"/>
+		<mapper resource="com/pc/homepage/mapper/likeMapper.xml"/>
+	</mappers>
+</configuration>
